@@ -1,0 +1,227 @@
+/* Stil global sau în CSS-ul componentului */
+
+.adminLoginOverlay {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.adminLoginForm {
+    height: 330px;
+    background: #211D1D;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* sau center, după preferință */
+    padding: 35px 30px; /* padding pe stânga/dreapta */
+    position: relative;
+    max-width: 335px;
+    width: 100%;
+    margin: 0;
+}
+
+.h2{
+    font-weight: normal;
+    color: white;
+    padding-left: 30px;
+}
+
+.smallText{
+    font-family: "Raleway", "sans-serif";
+    padding-left: 30px;
+    width: 300px;
+    color: white;
+    opacity: 70%;
+}
+
+.inputBox{
+    border-bottom: 2px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    max-width: 300px;
+    padding-left: 0;
+    margin-left: 30px;
+    margin-top: 14px;
+    width: 110%;
+
+}
+
+/*cand dam click pe input, sa nu se vada nici atunci decat bordura de jos*/
+.inputBox:focus{
+    border-bottom: 2px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    outline: none;
+}
+
+.btnSendCode{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 115px;
+    padding-right:115px;
+    border-radius: 10px;
+    background-color: #E1114B !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: aliceblue;
+    cursor: pointer;
+    align-self: flex-start; /* sau center, după preferință */
+    position: static;
+    top: 50px;
+    right: auto;
+    margin-left: 30px;
+    margin-top: 50px;
+
+}
+
+.exitBtn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    top: 10px;      /* Ajustează distanța de sus, dacă e nevoie */
+    right: 10px;    /* Ajustează distanța de dreapta, dacă e nevoie */
+    cursor: pointer; /* Arată că e un element interactiv */
+    font-size: 1.0em;   /* Fă-l mai vizibil */
+}
+
+
+.editFormOverlay {
+    position: absolute; /* sau fixed, depinde de comportamentul dorit */
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100vh; /* Sau 100% dacă vrei să ocupe înălțimea containerului părinte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent, ca să fie peste pagina principală */
+    display: flex;
+    justify-content: center; /* Centrare pe orizontală */
+    align-items: center; /* Centrare pe verticală */
+    z-index: 1000; /* Asigură-te că e peste celelalte elemente */
+}
+
+.editForm {
+    position: relative;
+    overflow: visible;
+
+    background-color: #211D1D; /* Sau orice culoare dorești */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Umbră subtilă */
+    width: 80%; /* Sau orice lățime dorești pentru formularul propriu-zis */
+    max-width: 1000px; /* Lățime maximă, pentru a nu se întinde prea mult */
+    height: 650px;
+
+}
+
+.h2Titlu{
+    font-family: "Raleway", "sans-serif";
+    margin-top: 30px;
+    margin-left: 60px;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: normal;
+}
+.smallText2{
+    padding-top: 10px;
+    padding-left: 60px;
+    width: 550px;
+    color: white;
+    opacity: 70%;
+}
+
+.customToggleDown1{
+    position: absolute;
+    top: 330px;
+    z-index: 900;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: #494444;
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.customToggleDown{
+    position: absolute;
+    top: 200px;
+    z-index: 1200;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: #494444;
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.customToggleDown.open{
+    height: 440px;
+}
+
+.title{
+    font-size: 16px;
+    color: aliceblue;
+    font-family: "Raleway", "sans-serif";
+}
+
+.addEventToggle{
+    position: absolute;
+    z-index: 999;
+    top: 250px;
+    margin-top: 200px;
+    margin-left: 60px;
+    background-color: #494444;
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.addEventToggle[aria-expanded="true"]{
+    height: 370px;
+}
+
+.inputBox2{
+    border-bottom: 2px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: "Raleway", "sans-serif";
+    max-width: 350px;
+    padding: 5px;
+    margin-left: 45px;
+    margin-top: 24px;
+    width: 110%;
+}
+
+.inputBox2:focus{
+    border-bottom: 2px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+

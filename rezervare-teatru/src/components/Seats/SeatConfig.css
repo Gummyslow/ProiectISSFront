@@ -1,0 +1,32 @@
+/* Containerele pentru secțiuni */
+.seats {
+    position: absolute;
+    top: 150px;
+    right: 270px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr); /* 14 coloane, câte una pentru fiecare loc */
+    gap: 4px;
+    margin: 50px; /* Margine pentru a crea spațiu în jurul grid-ului */
+    width : 300px;
+}
+
+/* Stiluri pentru fiecare loc (buton) */
+.seat {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; /* Colțuri rotunjite */
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Culoare pentru locuri ocupate */
+.seat.occupied {
+    background-color: #E1114B;
+}
+
+/* Culoare pentru locuri disponibile */
+.seat.available {
+    background-color: #494444;
+}
+

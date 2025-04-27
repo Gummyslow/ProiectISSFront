@@ -1,0 +1,12 @@
+.deleteEventToggle {
+        margin-top: 245px;
+        margin-left: 60px;
+        background-color: #494444;
+        width: 450px;
+        padding: 10px;
+        border-radius: 5px;
+}
+
+.dropdown-item{
+    margin-left: -20px;
+}

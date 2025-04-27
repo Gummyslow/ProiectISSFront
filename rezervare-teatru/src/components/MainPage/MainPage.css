@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+.mainPage{
+    background-color: #110206;
+    height: 100%;
+    min-height: 100vh;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.playTitle{
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    top: 70%;
+    left: 5%;
+    text-decoration: underline;
+}
+
+.playDescription{
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    opacity: 70%;
+    top: 80%;
+    left: 5%;
+    width: 500px;
+}
+
+.btnMakeReservation{
+    position: absolute !important;
+    top: 630px;
+    right: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 10px;
+    background-color: #E1114B !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.horizontalDivider{
+    position: absolute;
+    width: 40%;  /* Ajustează lățimea dorită (ex: 50%, 300px etc.) */
+    height: 0.2px;  /* Grosimea liniei */
+    background-color: aliceblue;  /* Culoarea liniei */
+    opacity: 40%;
+    border: none;  /* Elimină stilul implicit */
+    margin: 20px auto; /* Centrare și margini */
+    top: 100px;
+    left: 750px;
+}
+
+.pinkbullet{
+    background-color: #E1114B;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.greybullet{
+    background-color: #494444;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.whitebullet{
+    background-color: aliceblue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/*cod ca sa aliniem doua elemente unu langa altu la acelasi nivel*/
+.seatColorDescription1{
+    position: absolute;
+    top: 550px;
+    right: 550px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.seatColorDescription2{
+    position: absolute;
+    top: 550px;
+    right: 400px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.seatColorDescription3{
+    position: absolute;
+    top: 550px;
+    right: 230px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dateStructure{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   top: 32px;
+   right: 605px;
+}
+
+.hourStructure{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 60px;
+    right: 690px;
+}
+
+.pinkBodyText{
+    font-family: "Raleway", "sans-serif";
+    font-weight: normal;
+    color: #E1114B;
+}
+
+.whiteBodyText{
+    font-family: "Raleway", "sans-serif";
+    font-weight: normal;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.lettersIndexing{
+    position: absolute;
+    top: 480px;
+    right: 230px;
+    font_family: "Raleway", "sans-serif";
+    font-size: 16px;
+    font-weight: normal;
+    color: aliceblue;
+    letter-spacing: 0.45em;
+    opacity: 70%;
+
+}
+
+
+.numbersIndexing {
+    position: absolute;
+    top: 185px;
+    right: 650px;
+    font-size: 16px;
+    opacity: 70%;
+    font-weight: normal;
+    color: aliceblue;
+    /*CA SA ALINIEM ELEMENTELE PE VERTICALA*/
+    display: flex;
+    flex-direction: column;  /* Așează literele pe verticală */
+    gap: 6px;  /* Spațiu între litere */
+    align-items: center;  /* Centrează literele pe axa orizontală */
+}
+
+.icon-button{
+    background-color: transparent;
+    color: aliceblue !important;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    left: 590px;
+}
+
+
+
